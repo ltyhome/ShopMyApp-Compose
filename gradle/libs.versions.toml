@@ -26,6 +26,7 @@ androidx-window = "1.1.0-alpha04"
 androidxHiltNavigationCompose = "1.0.0"
 androix-test-uiautomator = "2.2.0"
 coil = "2.2.0"
+zxing = "3.5.1"
 # @keep
 compileSdk = "33"
 compose-compiler = "1.3.2"
@@ -102,7 +103,7 @@ androidx-palette = { module = "androidx.palette:palette", version.ref = "android
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
-androidx-startup = { module = "androidx.startup:startup-runtime", version.ref = "androidx-startup"}
+androidx-startup = { module = "androidx.startup:startup-runtime", version.ref = "androidx-startup" }
 androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
 androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espresso" }
 androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
@@ -133,6 +134,7 @@ rometools-modules = { module = "com.rometools:rome-modules", version.ref = "rome
 rometools-rome = { module = "com.rometools:rome", version.ref = "rome" }
 secrets-gradlePlugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "secrets" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+zxing = { module = "com.google.zxing:core", version.ref = "zxing" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-converter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }

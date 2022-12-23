@@ -12,7 +12,6 @@ android {
 
     defaultConfig {
         minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
     }
 
     buildTypes {
@@ -66,6 +65,7 @@ dependencies {
     api(libs.androidx.hilt.navigation.compose)
     api(libs.coil.kt.compose)
     api(libs.moshi)
+    api(libs.zxing)
     api(libs.moshi.kotlin)
     api(libs.retrofit)
     api(libs.retrofit.converter)

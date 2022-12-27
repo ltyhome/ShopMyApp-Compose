@@ -65,6 +65,7 @@ dependencies {
     api(libs.androidx.hilt.navigation.compose)
     api(libs.coil.kt.compose)
     api(libs.moshi)
+    api(libs.mmkv)
     api(libs.zxing)
     api(libs.moshi.kotlin)
     api(libs.retrofit)

@@ -2,7 +2,7 @@ package com.android.library.network.interceptor
 
 import com.android.library.network.logging.Level
 import com.android.library.network.logging.Printer
-import com.android.library.utils.extension.formatJson
+import formatJson
 import okhttp3.Headers
 import okhttp3.Interceptor
 import okhttp3.MediaType

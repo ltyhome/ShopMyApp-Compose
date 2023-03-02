@@ -23,7 +23,7 @@
             tools:targetApi="q" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${googleMapsKey}" />
+            android:value="@string/app_name" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">

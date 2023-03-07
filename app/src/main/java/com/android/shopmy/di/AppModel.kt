@@ -5,6 +5,4 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
-@Module(includes = [LibraryModel::class])
-@InstallIn(SingletonComponent::class)
-class AppModel
+@Module(includes = [LibraryModel::class]) @InstallIn(SingletonComponent::class) class AppModel

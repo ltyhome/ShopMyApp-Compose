@@ -5,5 +5,5 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun splashPage() {
-    Text(text = "Hello World")
+  Text(text = "Hello World")
 }

@@ -9,13 +9,13 @@ import com.tencent.mmkv.MMKV
 import com.tencent.mmkv.MMKVLogLevel
 
 class ShopMyInitializer : Initializer<Unit>, LifecycleObserver {
-    override fun create(context: Context) {
-        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
-        if (MKOwner.default == null) {
-            MMKV.initialize(context, MMKVLogLevel.LevelNone)
-            MKOwner.default = MMKV.defaultMMKV()
-        }
+  override fun create(context: Context) {
+    ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+    if (MKOwner.default == null) {
+      MMKV.initialize(context, MMKVLogLevel.LevelNone)
+      MKOwner.default = MMKV.defaultMMKV()
     }
+  }
 
-    override fun dependencies(): MutableList<Class<out Initializer<*>>> = mutableListOf()
+  override fun dependencies(): MutableList<Class<out Initializer<*>>> = mutableListOf()
 }

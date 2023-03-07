@@ -5,6 +5,8 @@ plugins {
     id("kotlin-android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("io.gitlab.arturbosch.detekt")
+    id("com.ncorti.ktfmt.gradle")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 

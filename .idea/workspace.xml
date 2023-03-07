@@ -10,22 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b68e48-a2b1-4e09-96d1-d06129974ea1" name="Changes" comment="condition">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/page/SplashPage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/android/library/utils/MKOwner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/utils/ShopMyApp-Compose.utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/utils/ShopMyApp-Compose.utils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyApplication.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyInitializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/di/AppModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/di/AppModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/page/SplashPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/page/SplashPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildscripts/init.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildscripts/toml-updater-config.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/buildscripts/toml-updater-config.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotless/copyright.kt" beforeDir="false" />
+    </list>
+    <list id="a26e1534-e4f8-49a8-8435-a6353e663071" name="ignore" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\ltyhome\.android\avd\Pixel_3a_API_33_x86_64.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,6 +47,12 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/library">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
           <activation />
         </task>
         <projects_view>
@@ -47,7 +65,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ShopMyApp-Compose" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ShopMyApp-Compose" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -68,6 +92,12 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="E:\workspace\ComposeLib\debug.jks" />
+    <option name="KEY_ALIAS" value="androiddebugkey" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -75,6 +105,28 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="12" end1="17" start2="12" end2="12" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="18" end1="18" start2="13" end2="15" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="19" end1="21" start2="16" end2="34" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="27" end1="28" start2="40" end2="40" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="37" end1="37" start2="49" end2="55" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="49" end1="50" start2="67" end2="74" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="70" end1="70" start2="94" end2="100" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="77" end1="77" start2="107" end2="129" changelist="75b68e48-a2b1-4e09-96d1-d06129974ea1" />
+        <range start1="87" end1="104" start2="139" end2="161" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="105" end1="109" start2="162" end2="169" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="111" end1="112" start2="171" end2="172" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="132" end1="133" start2="192" end2="193" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="249" end1="249" start2="309" end2="379" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="254" end1="254" start2="384" end2="385" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="273" end1="274" start2="404" end2="426" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+        <range start1="275" end1="275" start2="427" end2="437" changelist="a26e1534-e4f8-49a8-8435-a6353e663071" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

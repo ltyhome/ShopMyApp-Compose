@@ -26,7 +26,7 @@ subprojects {
 }
 
 plugins {
-    id("com.github.ben-manes.versions") version "0.43.0"
+    id("com.github.ben-manes.versions") version "0.46.0"
     id("nl.littlerobots.version-catalog-update") version "0.7.0"
     id("com.android.application") version "7.3.1" apply false
     id("org.jetbrains.kotlin.android") version "1.7.20" apply false

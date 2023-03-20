@@ -52,7 +52,6 @@ android {
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
@@ -67,6 +66,12 @@ android {
 
     packagingOptions {
         resources.excludes.addAll(mutableSetOf("/META-INF/AL2.0","/META-INF/LGPL2.1"))
+    }
+}
+
+kapt {
+    javacOptions {
+        option("-Xmaxerrs",500)
     }
 }
 

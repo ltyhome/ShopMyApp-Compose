@@ -1,4 +1,4 @@
-package com.android.compose.ui.page
+package com.android.compose.ui.page.intro
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

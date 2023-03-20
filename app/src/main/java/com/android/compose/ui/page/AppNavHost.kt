@@ -5,7 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.android.compose.config.Router
-import com.android.compose.ui.fragment.IntroFragment
+import com.android.compose.ui.fragment.intro.IntroFragment
 import com.android.compose.ui.fragment.LoginFragment
 import com.android.compose.ui.fragment.MainFragment
 

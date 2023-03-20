@@ -6,10 +6,8 @@ import androidx.activity.compose.setContent
 import com.android.compose.ui.page.MainPage
 
 class ComposeActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MainPage()
-        }
-    }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContent { MainPage() }
+  }
 }

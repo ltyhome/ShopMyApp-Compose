@@ -4,6 +4,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 
 @Composable
-fun MainPage() {
+fun LoginPage() {
   Text(text = "Hello World")
 }

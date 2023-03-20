@@ -1,5 +1,3 @@
 package com.android.compose.config
 
-object Params {
-
-}
+object Params {}

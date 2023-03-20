@@ -38,7 +38,7 @@ hiltExt = "1.0.0"
 jdkDesugar = "1.1.5"
 junit = "4.13.2"
 # @pin update when updating Compose Compiler
-kotlin = "1.7.20"
+kotlin = "1.8.0"
 maps-compose = "2.5.3"
 material = "1.8.0-alpha02"
 # @keep

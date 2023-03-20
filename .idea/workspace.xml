@@ -10,8 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b68e48-a2b1-4e09-96d1-d06129974ea1" name="Changes" comment="condition">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/ShopMyActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ComposeApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ShopMyInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ComposeInitializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/di/AppModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/di/AppModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/ShopMyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ui/ComposeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/page/MainPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ui/page/MainPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/page/SplashPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ui/page/SplashPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/shopmy/ui/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/compose/ui/theme/Color.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <list id="a26e1534-e4f8-49a8-8435-a6353e663071" name="ignore" comment="ignore">
@@ -124,7 +132,7 @@
     "android-custom-viewF:/workspace/ShopMyApp-Compose/utils/src/main/java/com/android/library/utils/widget/StateView.kt_SELECTED": "StateView",
     "cidr.known.project.marker": "true",
     "last_opened_file_path": "E:/workspace/ComposeLib",
-    "project.structure.last.edited": "Dependencies",
+    "project.structure.last.edited": "Suggestions",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.language.Kotlin"
@@ -139,6 +147,11 @@
     ]
   }
 }]]></component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\ShopMyApp-Compose\utils\src\main\res\font" />
@@ -435,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679295375608</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="condition">
+      <created>1679295637411</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679295637411</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -474,6 +494,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/build.gradle.kts</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

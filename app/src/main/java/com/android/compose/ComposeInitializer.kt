@@ -1,4 +1,4 @@
-package com.android.shopmy
+package com.android.compose
 
 import android.content.Context
 import androidx.lifecycle.LifecycleObserver
@@ -8,7 +8,7 @@ import com.android.library.utils.MKOwner
 import com.tencent.mmkv.MMKV
 import com.tencent.mmkv.MMKVLogLevel
 
-class ShopMyInitializer : Initializer<Unit>, LifecycleObserver {
+class ComposeInitializer : Initializer<Unit>, LifecycleObserver {
   override fun create(context: Context) {
     ProcessLifecycleOwner.get().lifecycle.addObserver(this)
     if (MKOwner.default == null) {

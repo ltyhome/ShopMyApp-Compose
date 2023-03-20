@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.shopmy">
+    package="com.android.compose">
 
     <application
-        android:name=".ShopMyApplication"
+        android:name=".ComposeApplication"
         android:allowBackup="false"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +25,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/app_name" />
         <activity
-            android:name=".ui.ShopMyActivity"
+            android:name="com.android.compose.ui.ComposeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
             android:authorities="${applicationId}.androidx-startup"
             android:exported="false"
             tools:node="merge">
-            <meta-data  android:name="com.android.shopmy.ShopMyInitializer"
+            <meta-data  android:name="com.android.compose.ComposeInitializer"
                 android:value="androidx.startup" />
         </provider>
     </application>

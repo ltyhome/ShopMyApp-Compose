@@ -1,4 +1,4 @@
-package com.android.shopmy.di
+package com.android.compose.di
 
 import com.android.library.di.LibraryModel
 import dagger.Module

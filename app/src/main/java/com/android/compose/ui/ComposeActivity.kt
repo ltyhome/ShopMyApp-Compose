@@ -1,11 +1,11 @@
-package com.android.shopmy.ui
+package com.android.compose.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.android.shopmy.ui.page.MainPage
+import com.android.compose.ui.page.MainPage
 
-class ShopMyActivity : ComponentActivity() {
+class ComposeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

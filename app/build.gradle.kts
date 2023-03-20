@@ -12,9 +12,9 @@ plugins {
 
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
-    namespace = "com.android.shopmy.dev"
+    namespace = "com.android.compose.dev"
     defaultConfig {
-        applicationId = "com.android.shopmy"
+        applicationId = "com.android.compose"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1

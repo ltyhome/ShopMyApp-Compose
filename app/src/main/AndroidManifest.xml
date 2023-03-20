@@ -25,7 +25,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/app_name" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.ShopMyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

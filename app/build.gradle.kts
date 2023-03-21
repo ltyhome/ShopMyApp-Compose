@@ -24,6 +24,17 @@ android {
                 arguments["dagger.hilt.disableModulesHaveInstallInCheck"] = "true"
             }
         }
+        ndk {
+            abiFilters.addAll(mutableSetOf("armeabi-v7a", "arm64-v8a", "x86_64"))
+        }
+        splits {
+            abi {
+                reset()
+                include("armeabi-v7a")
+                include("arm64-v8a")
+                include("x86_64")
+            }
+        }
     }
 
     signingConfigs {
@@ -52,8 +63,8 @@ android {
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     buildFeatures {

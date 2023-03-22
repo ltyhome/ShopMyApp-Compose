@@ -12,7 +12,7 @@ plugins {
 
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
-    namespace = "com.android.compose.dev"
+    namespace = "com.android.compose"
     defaultConfig {
         applicationId = "com.android.compose"
         minSdk = libs.versions.minSdk.get().toInt()

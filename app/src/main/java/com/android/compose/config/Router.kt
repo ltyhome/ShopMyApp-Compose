@@ -2,7 +2,7 @@ package com.android.compose.config
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.android.compose.dev.R
+import com.android.compose.R
 
 object Router {
   const val SPLASH = "SplashPage"

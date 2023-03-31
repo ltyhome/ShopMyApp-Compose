@@ -5,6 +5,7 @@ import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.window.layout.DisplayFeature
 import com.android.compose.data.HomeUIState
+import com.android.compose.ui.page.AppNavHost
 import com.android.library.utils.extension.AppContentType
 import dagger.hilt.android.HiltAndroidApp
 
@@ -18,5 +19,5 @@ fun ComposeApp(
     closeDetailScreen: () -> Unit = {},
     navigateToDetail: (String, AppContentType) -> Unit = { _, _ -> }
 ) {
-
+    AppNavHost()
 }

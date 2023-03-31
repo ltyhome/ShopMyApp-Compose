@@ -22,16 +22,9 @@ class ComposeActivity : ComponentActivity() {
             ComposeTheme {
                 val windowSize = calculateWindowSizeClass(this)
                 val displayFeatures = calculateDisplayFeatures(this)
-                val uiState by viewModel.uiState.collectAsStateWithLifecycle()
                 ComposeApp ( windowSize = windowSize,
                     displayFeatures = displayFeatures,
-                    replyHomeUIState = uiState,
-                    closeDetailScreen = {
-                        viewModel.closeDetailScreen()
-                    },
-                    navigateToDetail = { productId, pane ->
-                        viewModel.setSelectedProduct(productId, pane)
-                    })
+                    viewModel = viewModel)
             }
         }
     }

@@ -6,7 +6,6 @@ import android.content.Intent
 import android.os.CountDownTimer
 import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContract
-import com.android.library.utils.extension.receiveArguments
 
 inline fun <reified T> Activity.navigation(): Activity {
     startActivity(intent<T>())

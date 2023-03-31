@@ -12,6 +12,7 @@ object Router {
     const val INTRO4 = "IntroPage4"
     const val INTRO5 = "IntroPage5"
     const val LOGIN = "LoginPage"
+    const val MAIN = "MainPage"
     const val HOME = "HomePage"
     const val CART = "CartPage"
     const val MINE = "MinePage"

@@ -13,7 +13,7 @@ import org.json.JSONObject
 import java.lang.reflect.ParameterizedType
 import java.nio.charset.Charset
 import java.security.MessageDigest
-import java.util.Hashtable
+import java.util.*
 
 fun String.formatJson(indentSpaces: Int = 4): String {
     try {

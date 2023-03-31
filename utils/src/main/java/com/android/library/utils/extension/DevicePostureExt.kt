@@ -2,6 +2,11 @@ package com.android.library.utils.extension
 
 import android.graphics.Rect
 import androidx.window.layout.FoldingFeature
+import com.android.library.utils.extension.AppContentType.DUAL_PANE
+import com.android.library.utils.extension.AppContentType.SINGLE_PANE
+import com.android.library.utils.extension.AppNavigationContentPosition.CENTER
+import com.android.library.utils.extension.AppNavigationContentPosition.TOP
+import com.android.library.utils.extension.AppNavigationType.*
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
 

@@ -5,6 +5,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
 @Composable
-fun IntroPage(controller: NavController) {
-  Text(text = "Hello World")
+fun IntroPage4(controller: NavController) {
+  Text(text = "IntroPage4")
 }

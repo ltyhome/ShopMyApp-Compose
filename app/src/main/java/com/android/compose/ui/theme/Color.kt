@@ -58,3 +58,6 @@ val composeDarkOutline = Color(0xFF9C8F80)
 val composeDarkInverseOnSurface = Color(0xFF32281A)
 val composeDarkInverseSurface = Color(0xFFEAE1D9)
 val composeDarkPrimaryInverse = Color(0xFF624000)
+
+val composeNavigationTineColor = Color(0xFFD0D0D0)
+val composeNavigationTineSelectorColor = Color(0xFFF46E12)

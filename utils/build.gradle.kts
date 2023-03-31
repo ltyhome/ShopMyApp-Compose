@@ -40,8 +40,7 @@ android {
 }
 
 dependencies {
-    val composeBom = platform(libs.androidx.compose.bom)
-    api(composeBom)
+    api(platform(libs.androidx.compose.bom))
     api(libs.kotlin.stdlib)
     api(libs.kotlinx.coroutines.android)
     api(libs.googlemaps.maps)
@@ -58,6 +57,8 @@ dependencies {
     api(libs.androidx.compose.material.iconsExtended)
     api(libs.androidx.compose.ui.tooling.preview)
     api(libs.androidx.compose.runtime.livedata)
+    api(libs.androidx.lifecycle.runtime.compose)
+    api(libs.accompanist.adaptive)
     debugApi(libs.androidx.compose.ui.tooling)
     api(libs.androidx.navigation.compose)
     api(libs.androidx.navigation.ui.ktx)

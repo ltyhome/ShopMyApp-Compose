@@ -1,5 +1,6 @@
 package com.android.compose.ui.page
 
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
@@ -14,10 +15,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.android.compose.config.Router
 import com.android.compose.config.Screen
-import com.android.compose.ui.fragment.nav.CartFragment
-import com.android.compose.ui.fragment.nav.HomeFragment
-import com.android.compose.ui.fragment.nav.MineFragment
+import com.android.compose.ui.page.nav.CartPage
+import com.android.compose.ui.page.nav.HomePage
+import com.android.compose.ui.page.nav.MinePage
+import com.android.compose.ui.theme.composeNavigationTineColor
+import com.android.compose.ui.theme.composeNavigationTineSelectorColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -29,37 +33,37 @@ fun AppNavHost() {
           val navBackStackEntry by navController.currentBackStackEntryAsState()
           val currentDestination = navBackStackEntry?.destination
           listOf(Screen.Home, Screen.Cart, Screen.Mine).forEach { screen ->
+            val selected = currentDestination?.hierarchy?.any { it.route == screen.route } == true
             NavigationBarItem(
-                selected = currentDestination?.hierarchy?.any { it.route == screen.route } == true,
+                selected = selected,
                 onClick = {
                   navController.navigate(screen.route) {
-                    // Pop up to the start destination of the graph to
-                    // avoid building up a large stack of destinations
-                    // on the back stack as users select items
                     popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                    // Avoid multiple copies of the same destination when
-                    // reselected the same item
                     launchSingleTop = true
-                    // Restore state when reselected a previously selected item
                     restoreState = true
                   }
                 },
                 icon = {
                   Icon(
                       painter = painterResource(id = screen.resId),
-                      contentDescription = stringResource(screen.strId))
+                      contentDescription = stringResource(screen.strId),
+                      tint = selectedColor(selected))
                 },
-                label = { Text(text = stringResource(id = screen.strId)) })
+                modifier = Modifier.fillMaxHeight(63f),
+                label = { Text(text = stringResource(id = screen.strId), color = selectedColor(selected)) })
           }
         }
       }) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = Screen.Home.route,
+            startDestination = Router.SPLASH,
             modifier = Modifier.padding(innerPadding)) {
-              composable(Screen.Home.route) { HomeFragment() }
-              composable(Screen.Cart.route) { CartFragment() }
-              composable(Screen.Mine.route) { MineFragment() }
+              composable(Router.SPLASH) { SplashPage(navController) }
+              composable(Screen.Home.route) { HomePage(navController) }
+              composable(Screen.Cart.route) { CartPage(navController) }
+              composable(Screen.Mine.route) { MinePage(navController) }
             }
       }
 }
+
+private fun selectedColor(selected:Boolean) = if(selected) composeNavigationTineSelectorColor else composeNavigationTineColor

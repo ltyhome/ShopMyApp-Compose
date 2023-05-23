@@ -10,6 +10,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         multiDexEnabled = true
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -20,4 +21,9 @@ android {
             )
         }
     }
+}
+
+dependencies {
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
 }

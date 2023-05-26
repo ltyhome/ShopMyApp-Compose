@@ -74,6 +74,10 @@ gradlePlugin {
             id = "ltyhome.android.google"
             implementationClass = "GoogleConventionPlugin"
         }
+        register("Universal") {
+            id = "ltyhome.android.universal"
+            implementationClass = "UniversalConventionPlugin"
+        }
     }
 }
 

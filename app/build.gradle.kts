@@ -1,6 +1,7 @@
 plugins {
     id("ltyhome.android.application")
     id("ltyhome.android.hilt")
+    id("ltyhome.android.universal")
 }
 
 android {
@@ -20,6 +21,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
     }
 }
 

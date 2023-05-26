@@ -10,6 +10,7 @@ class GlideConventionPlugin: Plugin<Project> {
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
             dependencies {
                 add("implementation", libs.findLibrary("glide").get())
+                add("implementation", libs.findLibrary("glide.transformations").get())
                 add("implementation", libs.findLibrary("glide.compose").get())
                 add("implementation", libs.findLibrary("glide.okhttp").get())
             }

@@ -2,6 +2,8 @@
 # Project exclude paths
 /.gradle/
 /app/build/
+/build-logic/.gradle/
+/build-logic/convention/build/
 /library/build/
 /network/build/
 /utils/build/

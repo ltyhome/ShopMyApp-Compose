@@ -4,12 +4,23 @@ androidxHilt = "1.1.0-alpha01"
 appcompat = "1.6.1"
 arrow = "1.2.0-RC"
 coil = "2.3.0"
+adapter = "3.0.11"
+flyco = "3.0.0"
+smartRefresh = "2.0.5"
+timber = "5.0.1"
+wechat = "6.8.24"
+zbar = "1.4.2"
+intro = "6.1.5"
+imagePreview = "androidx-7.0.3"
+immersionBar = "3.2.2"
+agentWeb = "v5.0.6-androidx"
 composeBom = "2023.05.01"
 coreKtx = "1.10.1"
 espresso-core = "3.5.1"
 firebaseBom = "32.0.0"
 firebase = "2.9.5"
 glide = "4.15.1"
+transformations = "4.3.0"
 glideCompose = "1.0.0-alpha.1"
 googleServices = "4.3.15"
 googleLocation = "21.0.1"
@@ -18,7 +29,6 @@ googleMapKtx = "3.4.0"
 googlePay = "19.1.0"
 gson = "2.10.1"
 hilt = "2.45"
-junit = "4.13.2"
 kotlin = "1.8.0"
 ksp = "1.8.0-1.0.9"
 ktor = "2.0.3"
@@ -37,6 +47,7 @@ appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat"
 arrow-bom = { module = "io.arrow-kt:arrow-stack", version.ref = "arrow" }
 arrow-core = { module = "io.arrow-kt:arrow-core" }
 arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines" }
+adapter = { module = "com.github.CymChad:BaseRecyclerViewAdapterHelper", version.ref = "adapter" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 compose-animation = { module = "androidx.compose.animation:animation" }
@@ -52,9 +63,11 @@ converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", versi
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx"}
-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx"}
-crashlytics-ndk = { module = "com.google.firebase:firebase-crashlytics-ndk"}
+flyco = { module = "io.github.h07000223:flycoTabLayout", version.ref = "flyco" }
+intro = { module = "com.github.ltyhome:AppIntro", version.ref = "intro" }
+analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+crashlytics-ndk = { module = "com.google.firebase:firebase-crashlytics-ndk" }
 google-location = { module = "com.google.android.gms:play-services-location", version.ref = "googleLocation" }
 google-map = { module = "com.google.android.gms:play-services-maps", version.ref = "googleMap" }
 google-map-ktx = { module = "com.google.maps.android:maps-ktx", version.ref = "googleMapKtx" }
@@ -63,11 +76,17 @@ glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
 glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "glideCompose" }
 glide-okhttp = { module = "com.github.bumptech.glide:okhttp3-integration", version.ref = "glide" }
+glide-transformations = { module = "jp.wasabeef:glide-transformations", version.ref = "transformations" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHilt" }
-junit = { module = "junit:junit", version.ref = "junit" }
+immersionbar = { module = "com.geyifeng.immersionbar:immersionbar", version.ref = "immersionBar" }
+immersionbar-comp = { module = "com.geyifeng.immersionbar:immersionbar-components", version.ref = "immersionBar" }
+immersionbar-ktx = { module = "com.geyifeng.immersionbar:immersionbar-ktx", version.ref = "immersionBar" }
+smartrefresh-layout = { module = "io.github.scwang90:refresh-layout-kernel", version.ref = "smartRefresh" }
+smartrefresh-header = { module = "io.github.scwang90:refresh-header-material", version.ref = "smartRefresh" }
+smartrefresh-footer = { module = "io.github.scwang90:refresh-footer-classics", version.ref = "smartRefresh" }
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
@@ -75,9 +94,13 @@ ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
 ktor-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-serialization = { module = "io.ktor:ktor-serialization-gson", version.ref = "ktor" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+wechat = { module = "com.tencent.mm.opensdk:wechat-sdk-android", version.ref = "wechat" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+agent-web = { module = "com.github.Justson.AgentWeb:agentweb-core", version.ref = "agentWeb" }
+image-preview = { module = "com.github.SherlockGougou:BigImageViewPager", version.ref = "imagePreview" }
 okhttp-logging = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
 okhttp-urlconnection = { module = "com.squareup.okhttp3:okhttp-urlconnection", version.ref = "okhttp" }
 picker = { module = "io.github.lucksiege:pictureselector", version.ref = "picker" }
@@ -88,6 +111,7 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+zbar = { module = "com.github.ltyhome:zBarLibary", version.ref = "zbar" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

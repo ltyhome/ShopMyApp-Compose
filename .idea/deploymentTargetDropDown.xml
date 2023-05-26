@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="ComposeLib [:build-logic:convention:pluginDescriptors]">
+        <State />
+      </entry>
+      <entry key="ComposeLib [:build-logic:convention:pluginUnderTestMetadata]">
+        <State />
+      </entry>
+      <entry key="ComposeLib [:build-logic:convention:publish]">
+        <State />
+      </entry>
+      <entry key="ComposeLib [:build-logic:convention:validatePlugins]">
+        <State />
+      </entry>
+      <entry key="ComposeLib [versionCatalogUpdate]">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

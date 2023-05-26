@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `kotlin-dsl`
-    `maven-publish`
+    `ivy-publish`
 }
 
 group = "com.ltyhome.plugin"
@@ -69,6 +69,21 @@ gradlePlugin {
         register("Picker") {
             id = "ltyhome.android.picker"
             implementationClass = "PickerConventionPlugin"
+        }
+    }
+}
+
+publishing {
+    publications {
+        create<IvyPublication>("ivy") {
+            organisation = "com.ltyhome.plugin"
+            module = "build-logic"
+            revision = "1.0"
+            descriptor.status = "milestone"
+            descriptor.branch = "develop"
+            descriptor.extraInfo("http://plugin.ltyhome", "dsl", "plugin")
+
+            from(components["kotlin"])
         }
     }
 }

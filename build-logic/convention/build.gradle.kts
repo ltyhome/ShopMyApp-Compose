@@ -70,6 +70,10 @@ gradlePlugin {
             id = "ltyhome.android.picker"
             implementationClass = "PickerConventionPlugin"
         }
+        register("Google") {
+            id = "ltyhome.android.google"
+            implementationClass = "GoogleConventionPlugin"
+        }
     }
 }
 

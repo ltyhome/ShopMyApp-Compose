@@ -5,12 +5,17 @@ appcompat = "1.6.1"
 arrow = "1.2.0-RC"
 coil = "2.3.0"
 composeBom = "2023.05.01"
-core-ktx = "1.10.1"
+coreKtx = "1.10.1"
 espresso-core = "3.5.1"
+firebaseBom = "32.0.0"
 firebase = "2.9.5"
 glide = "4.15.1"
 glideCompose = "1.0.0-alpha.1"
 googleServices = "4.3.15"
+googleLocation = "21.0.1"
+googleMap = "18.1.0"
+googleMapKtx = "3.4.0"
+googlePay = "19.1.0"
 gson = "2.10.1"
 hilt = "2.45"
 junit = "4.13.2"
@@ -45,8 +50,15 @@ compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", version.ref = "retrofit" }
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx"}
+crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx"}
+crashlytics-ndk = { module = "com.google.firebase:firebase-crashlytics-ndk"}
+google-location = { module = "com.google.android.gms:play-services-location", version.ref = "googleLocation" }
+google-map = { module = "com.google.android.gms:play-services-maps", version.ref = "googleMap" }
+google-map-ktx = { module = "com.google.maps.android:maps-ktx", version.ref = "googleMapKtx" }
+google-pay = { module = "com.google.android.gms:play-services-wallet", version.ref = "googlePay" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
 glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "glideCompose" }

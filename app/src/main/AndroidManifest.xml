@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Compose"
         android:dataExtractionRules="@xml/data_extraction_rules"
-        tools:targetApi="s"
-        tools:replace="android:allowBackup"
-        tools:ignore="DataExtractionRules,LockedOrientationActivity">
+        tools:replace="android:allowBackup">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/app_name" />
